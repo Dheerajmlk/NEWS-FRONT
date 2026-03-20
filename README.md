@@ -1,16 +1,55 @@
-# React + Vite
+# 📰 News Frontend (User Website)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive news web application built using React + Vite that displays real-time news fetched from a custom backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+👉 https://news-front-mauve.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This frontend is part of a full-stack MERN news platform. It allows users to browse the latest news across different categories like Technology, Sports, Business, Health, and more.
+
+The application is optimized for performance and provides a clean UI similar to modern news platforms.
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React (Vite)
+- 🌐 Axios
+- 🧭 React Router DOM
+- 🎨 CSS / Custom Styling
+
+---
+
+## ✨ Features
+
+- 📰 Latest News Feed  
+- 📂 Category-based News (Technology, Sports, Business, etc.)  
+- 🔍 Search News by Keyword  
+- 📄 Pagination Support  
+- ⚡ Fast Loading with Vite  
+- 📱 Fully Responsive UI  
+- 🔗 Dynamic API Integration  
+
+---
+
+## 🧠 How It Works
+
+1. Frontend sends request to backend API  
+2. Backend fetches/stores news from GNews API  
+3. Frontend displays formatted news cards  
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_API_URL=https://news-back-ppy0.onrender.com/api
