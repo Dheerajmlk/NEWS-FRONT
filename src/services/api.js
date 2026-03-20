@@ -1,12 +1,11 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
-});
+const BASE_URL = import.meta.env.VITE_API_URL + "?v=2";
 
-export const fetchNews = async (params) => {
-  const response = await api.get("/news", { params });
-  return response.data;
-};
+console.log("API URL:", BASE_URL);
+
+const api = axios.create({
+  baseURL: BASE_URL,
+});
 
 export default api;
