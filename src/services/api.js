@@ -1,11 +1,11 @@
-import axios from 'axios';
+import axios from "axios";
 
 const api = axios.create({
-  baseURL: 'http://localhost:5050/api',
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 export const fetchNews = async (params) => {
-  const response = await api.get('/news', { params });
+  const response = await api.get("/news", { params });
   return response.data;
 };
 
